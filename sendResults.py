@@ -11,9 +11,10 @@ logPath = args.logPath
 if logPath:
     if os.path.exists(logPath):
         with open(logPath, 'r') as logFile:    
+            logContent = logFile.read()
             webhookUrl = os.getenv('WEBHOOK_URL')
             if webhookUrl:
-                requests.post(webhookUrl, json=logFile)
+                requests.post(webhookUrl, json=json.loads(logContent))
             else:
                 print("WEBHOOK_URL environment variable not set.")
     else:
