@@ -11,11 +11,13 @@ logPath = args.logPath
 if logPath:
     if os.path.exists(logPath):
         with open(logPath, 'r') as logFile:    
-            logContent = logFile.read().replace('\n', ' ')
+            lines = file.readlines()
+            jsonList = [json.loads(line.strip()) for line in lines]
+            jsonObject = {"data": jsonList}
             
             webhookUrl = os.getenv('WEBHOOK_URL')
             if webhookUrl:
-                requests.post(webhookUrl, json=json.dumps(logContent))
+                requests.post(webhookUrl, json=jsonObject)
             else:
                 print("WEBHOOK_URL environment variable not set.")
     else:
