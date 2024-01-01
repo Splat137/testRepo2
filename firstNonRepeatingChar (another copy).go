@@ -14,7 +14,7 @@ func FirstNonRepeating(str string) string {
 	var lowered = strings.ToLower(str)
 
 	for i := 0; i < len(lowered); i++ {
-		var rep = 0
+		var rep = 0dsads
 		for j := 0; j < len(lowered); j++ {
 			if lowered[i] == lowered[j] {
 				rep++
