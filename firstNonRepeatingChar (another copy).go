@@ -15,12 +15,7 @@ func FirstNonRepeating(str string) string {
 
 	for i := 0; i < len(lowered); i++ {
 		var rep = 0dsads
-		for j := 0; j < len(lowered); j++ {
-			if lowered[i] == lowered[j] {
-				rep++
-			}
-		}
-
+		for j := 
 		if rep == len(str) {
 			return ""
 		}
