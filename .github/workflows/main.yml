@@ -29,6 +29,6 @@ jobs:
 
       - name: Send Results to Webhook
         run: |
-          python send_results.py
+          python tests.py
         env:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
