@@ -26,10 +26,10 @@ jobs:
 
       - name: Run Tests
         run: |
-          python -m pytest
+          python -m pytest tests.py
 
-      - name: Send Results to Webhook
-        run: |
-          python tests.py
-        env:
-          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+      # - name: Send Results to Webhook
+      #   run: |
+      #     python tests.py
+      #   env:
+      #     WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
