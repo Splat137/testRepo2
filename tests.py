@@ -29,11 +29,8 @@ def pytest_sessionfinish(session, exitstatus):
 
     webhook_url = os.getenv('WEBHOOK_URL')
     if webhook_url:
-        test_results = json.dump({
-            'exit_status': exitstatus,
-            'passed_amount': passed_amount,
-            'failed_amount': failed_amount
-        })
+        result_dict = {'exit_status': exitstatus, 'passed_amount': passed_amount, 'failed_amount': failed_amount}
+        test_results = json.dump(result_dict)
         response = requests.post(webhook_url, json=test_results)
     else:
         print("WEBHOOK_URL environment variable not set.")
