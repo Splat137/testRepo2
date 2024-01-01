@@ -30,6 +30,6 @@ jobs:
 
       - name: Send Results to Webhook
         run: |
-          python sendResults.py --resultlog log/resultlog.txt
+          python sendResults.py --resultlog=log/resultlog.txt
         env:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
