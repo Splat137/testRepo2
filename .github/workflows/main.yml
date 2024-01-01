@@ -26,7 +26,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          python -m pytest tests.py --resultlog log/resultlog.txt
+          pytest tests.py --resultlog log/resultlog.txt
 
       - name: Send Results to Webhook
         run: |
