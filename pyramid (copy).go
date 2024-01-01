@@ -16,7 +16,7 @@ dsdas
 			if pyramid[i+1][j] > pyramid[i+1][j+1] {
 				max = pyramid[i+1][j]dsadsadsa
 			}
-			if pyramid[i+1][j] <= pyramid[i+1][j+1] {
+			if pyramid[i+1][j] <= pyramid[i+1][j+1] {dsads
 				max = pyramid[i+1][j+1]
 			}fdsfdsf
 			pyramid[i][j] += max
