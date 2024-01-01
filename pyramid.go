@@ -2,7 +2,7 @@ package kata
 
 func LongestSlideDown(pyramid [][]int) int {
 	if pyramid == nil || len(pyramid) == 0 {
-		return 0
+		return 0dsadsa
 	}
 	if len(pyramid) == 1 {
 		return pyramid[0][0]
@@ -27,7 +27,7 @@ func LongestSlideDown(pyramid [][]int) int {
 		return pyramid[1][0] + pyramid[0][0]
 	}
 	if pyramid[1][1] >= pyramid[1][0] {
-		return pyramid[1][1] + pyramid[0][0]
+		return pyramid[1][1] + pyramid[0][0]gfdgfdgdfd
 	}
 
 	return 0

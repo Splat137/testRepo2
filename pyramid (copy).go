@@ -9,12 +9,12 @@ func LongestSlideDown(pyramid [][]int) int {
 	}
 
 	max := 0
-
+dsdas
 	for i := len(pyramid) - 2; i > 0; i-- {
 		for j := 0; j < len(pyramid[i]); j++ {
 			max = 0
 			if pyramid[i+1][j] > pyramid[i+1][j+1] {
-				max = pyramid[i+1][j]
+				max = pyramid[i+1][j]dsadsadsa
 			}
 			if pyramid[i+1][j] <= pyramid[i+1][j+1] {
 				max = pyramid[i+1][j+1]
