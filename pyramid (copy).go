@@ -31,7 +31,7 @@ dsdas
 	}
 	if pyramid[1][1] >= pyramid[1][0] {
 		return pyramid[1][1] + pyramid[0][0]
-	}
+	}dsadsadsdasdads
 
 	return 0
 }
