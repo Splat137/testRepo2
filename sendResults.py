@@ -15,8 +15,7 @@ if logPath:
             
         webhookUrl = os.getenv('WEBHOOK_URL')
         if webhookUrl:
-            testResults = json.dumps({'results' : logContent})
-            requests.post(webhookUrl, json=testResults)
+            requests.post(webhookUrl, json=logContent)
         else:
             print("WEBHOOK_URL environment variable not set.")
     else:
