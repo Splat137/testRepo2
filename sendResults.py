@@ -11,7 +11,7 @@ logPath = args.logPath
 if logPath:
     if os.path.exists(logPath):
         with open(logPath, 'r') as logFile:    
-            lines = file.readlines()
+            lines = logFile.readlines()
             jsonList = [json.loads(line.strip()) for line in lines]
             jsonObject = {"data": jsonList}
             
