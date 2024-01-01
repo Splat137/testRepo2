@@ -15,6 +15,6 @@ webhook_url = os.getenv('WEBHOOK_URL')
 if webhook_url:
     test_results = {"status": "success", "message": "Tests passed successfully"}
 
-    response = requests.post(webhook_url, json=test_results)
+    #response = requests.post(webhook_url, json=test_results)
 else:
     print("WEBHOOK_URL environment variable not set.")
