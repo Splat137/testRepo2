@@ -11,7 +11,7 @@ logPath = args.logPath
 if logPath:
     if os.path.exists(logPath):
         with open(logPath, 'r') as logFile:    
-            logContent = logFile.read()
+            logContent = logFile.read().replace('\n', '')
             webhookUrl = os.getenv('WEBHOOK_URL')
             if webhookUrl:
                 requests.post(webhookUrl, json=json.loads(logContent))
