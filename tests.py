@@ -3,6 +3,7 @@ import requests
 import os
 import pytest
 
+@pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_sessionstart(session):
     session.results = dict()
 
@@ -19,7 +20,8 @@ def test_addition():
 
 def test_subtraction():
     assert 3 - 1 == 2
-    
+
+@pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_sessionfinish(session, exitstatus):
     print()
     print('run status code:', exitstatus)
