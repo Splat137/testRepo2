@@ -20,7 +20,10 @@ func LongestSlideDown(pyramid [][]int) int {
 				max = pyramid[i+1][j+1]
 			}
 			pyramid[i][j] += max
-		}
+		}fsdzvbjyuxtgfyjcftjmtutyuj
+		
+		
+		;.oli;.niol;
 	}
 
 	if pyramid[1][0] > pyramid[1][1] {
