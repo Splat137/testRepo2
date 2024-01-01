@@ -11,7 +11,7 @@ func ProductFib(prod uint64) [3]uint64 {
 		a2 = a1
 		a1 = fib
 		fib = a1 + a2
-
+dsads
 		if a2*a1 == prod {
 			res[0] = a2
 			res[1] = a1
