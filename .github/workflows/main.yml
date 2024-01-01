@@ -26,10 +26,10 @@ jobs:
 
       - name: Run Tests
         run: |
-          pytest tests.py --report-log=log/resultlog.json
+          pytest tests.py --report-log=log/resultlog.txt
 
       - name: Send Results to Webhook
         run: |
-          python sendResults.py --resultlog log/resultlog.json
+          python sendResults.py --resultlog log/resultlog.txt
         env:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
