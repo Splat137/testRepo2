@@ -1,4 +1,4 @@
-name: Run Tests and Send Results
+name: Run tests
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout repo
         uses: actions/checkout@v2
 
       - name: Set up Python
@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: 3.11.6
 
-      - name: Install dependencies
+      - name: Dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install pytest requests pytest-reportlog
@@ -28,7 +28,7 @@ jobs:
         run: |
           pytest tests.py -v --report-log=log/resultlog.jsonl
 
-      - name: Send Results to Webhook
+      - name: Send Results
         run: |
           python sendResults.py --resultlog log/resultlog.jsonl
         env:
