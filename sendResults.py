@@ -21,6 +21,6 @@ if logPath:
             else:
                 print("WEBHOOK_URL environment variable not set.")
     else:
-        print(f"Log file not found at: {log_path}")
+        print(f"Log file not found at: {logPath}")
 else:
-    print("--resultlog option not specified.")
+    print("--resultlog option not set.")
