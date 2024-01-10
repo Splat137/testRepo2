@@ -19,8 +19,6 @@ dsdas
 				max = pyr
 		dsadsads
 		;.oli;.niol;
-	}
-
 	if pyramid[1][0] > pyramid[1][1] {
 		return pyramid[1][0] + pyramid[0][0]
 	}
