@@ -16,7 +16,7 @@ def test4():
     assert not False
 
 def test5():
-    assert 2*2 == 4
+    assert 3*2 == 6
 
 def test6():
     assert True
