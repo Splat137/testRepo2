@@ -19,4 +19,4 @@ def test5():
     assert 3*2 == 6
 
 def test6():
-    assert True
+    assert False
