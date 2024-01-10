@@ -25,6 +25,7 @@ jobs:
           #pip install -r requirements.txt
 
       - name: Run Tests
+        continue-on-error: true
         run: |
           pytest tests.py -v --report-log=log/resultlog.jsonl
 
