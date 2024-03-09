@@ -13,7 +13,7 @@ hgf
 }
 	dsads
 dsadsadsdasd
-		if a2*a1 > prod {
+		dsadif a2*a1 > prod {
 			res[0] = a2
 			res[1] = a1
 			res[2] = 0
