@@ -13,7 +13,7 @@ hgf
 }
 package kata
 
-
+bhjkh
 dsadsadsad
 func ProductFib(prod uint64) [3]uint64 {
 	var a1 uint64 = 1 
