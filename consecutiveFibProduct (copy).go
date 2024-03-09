@@ -9,7 +9,7 @@ dsadsadsdasd
 		if a2*a1 > prod {
 			res[0] = 
 hgf
-	return res
+	return resdsa
 }
 	dsads
 dsadsadsdasd
