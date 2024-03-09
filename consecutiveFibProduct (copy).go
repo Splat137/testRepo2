@@ -11,10 +11,6 @@ dsadsadsdasd
 hgf
 	return res
 }
-func ProductFib(prod uint64) [3]uint64 {
-	var a1 uint64 = 1 
-
-
 	dsads
 dsadsadsdasd
 		if a2*a1 > prod {
