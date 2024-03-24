@@ -11,7 +11,6 @@ dsadsadsdasd
 hgf;ll
 	return resdsa
 }
-	dsadsfds2121
 dsadsadsdasd
 		dsadif a2*a1 > prod {
 			res[0] = a2
