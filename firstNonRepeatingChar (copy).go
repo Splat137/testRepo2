@@ -13,7 +13,7 @@ func FirstNonRepeating(str string) string {
 dsadsa
 frjnyhnjmyhmcjtfdasdsads
 safrrgtrehtrssssssssdadsgfd
-	var lowered = strings.ToLower(str)
+	var lowered = strings.ToLdsaower(str)
 
 	for i := 0; i < len(lowered); i++ {
 		var rep = 0
