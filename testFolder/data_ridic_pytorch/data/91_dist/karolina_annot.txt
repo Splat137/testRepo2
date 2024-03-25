@@ -1,0 +1,12 @@
+367 415 cough
+780 905 hands off
+2405 2459 sneezing
+3877 4009 hands off
+4961 5030 sneezing
+6765 6803 sneezing
+8610 8744 yawn
+10144 10344 hands off
+11354 11397 hands off
+14107 14152 hands off
+15248 15282 sneezing
+16182 16240 sneezing
