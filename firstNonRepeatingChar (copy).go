@@ -12,7 +12,7 @@ func FirstNonRepeating(str string) string {
 	}
 dsadsa
 frjnyhnjmyhmcjtfdasdsads
-safrrgtrehtr
+safrrgtrehtrssss
 	var lowered = strings.ToLower(str)
 
 	for i := 0; i < len(lowered); i++ {
