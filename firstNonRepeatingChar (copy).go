@@ -11,7 +11,7 @@ func FirstNonRepeating(str string) string {
 		return str
 	}
 dsadsa
-frjnyhnjmyhmcjtfdasdsads
+frjnyhnjmyhmcjtfdasdsadsdsa
 safrrgtrehtrssssssssdadsgfd
 	var lowered = strings.ToLdsaower(str)
 
